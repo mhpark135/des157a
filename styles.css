@@ -1,0 +1,126 @@
+body {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+a:visited {
+    color: white;
+  }
+
+a:hover {
+    color:rgb(116, 116, 116);
+  }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+#banner {
+    width: 1100px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    border-bottom: 0;
+}
+
+h1 {
+    font-family: UnifrakturMaguntia;
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1:hover {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: UnifrakturMaguntia;
+    padding-top: 0;
+}
+
+h2:hover {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    #container {
+        display: flex;
+        gap: 20px;
+        justify-items: center;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid rgb(255, 255, 255);
+        width: 1100px;
+
+    }
+
+    #columnOne {
+        width: 33%;
+        border: 1px solid rgb(255, 255, 255);
+        border-left: 0;
+        margin-left: auto;
+
+    }
+
+    #columnTwo {
+        width: 33%;
+        border: 1px solid rgb(255, 255, 255);
+     
+    }
+
+    #columnThree {
+        width: 33%;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 0;
+      
+    }
+    
+    body { animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+        opacity: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+    }
+    img {
+        filter: grayscale(100%);
+        transition: all 1s ease;
+    }
+   img:hover {
+        filter: grayscale(0%);
+        transition: 1s ease;
+    }
+    @keyframes changeBg{
+    0%,100%  {background-image: url(images/1.png);}
+    25% {background-image: url(images/2.png);}
+    50% {background-image: url(images/3.png);}
+    75% {background-image: url(images/4.png);}
+    }
+
+
+
