@@ -115,6 +115,13 @@ ul {
         filter: grayscale(0%);
         transition: 1s ease;
     }
+
+    body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+
     @keyframes changeBg{
     0%,100%  {background-image: url(images/1.png);}
     25% {background-image: url(images/2.png);}
