@@ -1,4 +1,87 @@
 p {
     width: 500px;
     line-height: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.centerB {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.347);
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    margin-top: 4vh;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+a:visited {
+    color: white;
+  }
+
+a:hover {
+    color:rgb(142, 77, 199);
+  }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+#banner {
+    width: 1100px;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    border-bottom: 0;
+}
+.link {
+    text-align: center;
+    background-color: none;
+}
+h1 {
+    font-family: UnifrakturMaguntia;
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1:hover {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: UnifrakturMaguntia;
+    padding-top: 0;
+}
+
+h2:hover {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    
+    body { animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+    }
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+
+    @keyframes changeBg{
+    0%,100%  {background-image: url(/images/1.png);}
+    25% {background-image: url(/images/2.png);}
+    50% {background-image: url(/images/3.png);}
+    75% {background-image: url(/images/4.png);}
+    }
