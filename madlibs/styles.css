@@ -1,0 +1,48 @@
+input[type="text"]:focus {
+    border:1px solid #D6D9DC;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="text"] {
+    margin-bottom: 1em;
+}
+
+
+h1{
+    color: #D6D9DC;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    ;
+}
+body { 
+    animation: changeBg 3.5s infinite; 
+    width:auto;
+    height:auto;
+    animation-timing-function: linear;
+}
+
+
+body {
+    background-size:auto;
+    background-repeat: no-repeat;
+    }
+
+#inputG {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 600px;
+    margin-top: 200px;
+    margin-left: 390px;
+}
+
+@keyframes changeBg{
+0%,100%  {background-image: url(images/bkgrnd1.png);}
+25% {background-image: url(images/bkgrnd2.png);}
+50% {background-image: url(images/bkgrnd3.png);}
+75% {background-image: url(images/bkgrnd1.png);}
+}
