@@ -70,18 +70,17 @@ h2:hover {
 }
 
     
-    body { animation: changeBg 10s infinite; width:auto;height:auto;
-        animation-timing-function: linear;
+body { animation: changeBg 10s infinite; width:auto;height:auto;animation-timing-function: linear;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
     }
 
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
-
     @keyframes changeBg{
-    0%,100%  {background-image: url(/images/1.png);}
-    25% {background-image: url(/images/2.png);}
-    50% {background-image: url(/images/3.png);}
-    75% {background-image: url(/images/4.png);}
+    0%,100%  {background-image: url(images/bg1.png);}
+    25% {background-image: url(images/bg2.png);}
+    50% {background-image: url(images/bg3.png);}
+    75% {background-image: url(images/bg4.png);}
     }
