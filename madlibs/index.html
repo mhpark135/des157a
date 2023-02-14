@@ -20,36 +20,44 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            MadLibs: Valentines Day Card
-        </h1>
-    </header>
-
     <main>
-        <form>
-            <section>
-                <div id="inputG">
-                    <label for="tcard">To:</label><br>
-                    <input type="text" id="tcard" name="tcard" required><br>
-                    <label for="fcard">From:</label><br>
-                    <input type="text" id="fcard" name="fcard" required><br>
-                    <label for="noun1">Noun:</label><br>
-                    <input type="text" id="noun1" name="noun1" required><br>
-                    <label for="noun1">Celebrity Name:</label><br>
-                    <input type="text" id="celebN" name="celebN" required><br>
-                    <label for="bodyP">Body Part:</label><br>
-                    <input type="text" id="bodyP" name="bodyP" required><br>
-                    <label for="food">Food:</label><br>
-                    <input type="text" id="food" name="food" required><br>
+            <div class = "card">
+                <div class ='back'></div>
+                <div class ='front'> 
+                    <form id="myform">
+                    <section>
+                            <h2>Fill out the words below!</h2>
+                            <label for="noun1">Provide a Noun</label>
+                            <input type="text" id="noun1"><br>
+                
+                            <label for="adj">Provide an Adjective</label>
+                            <input type="text" id="adj"><br>
+                
+                            <label for="noun2">Provide another Noun</label>
+                            <input type="text" id="noun2"><br>
+                
+                            <label for="celeb">Provide a Celebrity Name</label>
+                            <input type="text" id="celeb"><br>
 
-                    <input type="submit">
-                </div>
-            </section>
-            <section>
-                <p hidden>Oh, noun this is my love letter to you. Everyday I wake up and am reminded of you. Your eyes, are adjective and as big as a(n) noun. Your smile is brighter than celebrity's. When I think of you, I'm reminded of the smell of your body part. Oh, a sweet fragrance with a tinge of food. You truly are perfect in all your being. So I write this letter asking once and for all, would you be my valentine?</p>
-            </section>
-        </form>
+                            <label for="bodyP">Provide a Body Part</label>
+                            <input type="text" id="bodyP"><br>
+
+                            <label for="food">Provide a Food</label>
+                            <input type="text" id="food"><br>
+                
+                            <input type ="submit" value="Click me twice!" class="open"><br>
+                    </section>
+                </form></div>
+            </div>
     </main>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h2>Your Valentine!</h2>
+            <div id="madlib"></div>
+            <button class="close">close</button>
+        </article>
+    </section>
+
 </body>
 </html>
