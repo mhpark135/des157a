@@ -77,6 +77,9 @@
                 }
             })
 
+
+            // document.getElementById('madlib').style.color = 'red';
+
             
         
         })();
