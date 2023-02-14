@@ -49,7 +49,7 @@
         }
 
          else {
-            myText = `Oh, ${noun1} this is my love letter to you. Everyday I wake up and am reminded of you. Your eyes, are ${adj} and as big as a(n) ${noun2}. Your smile is brighter than ${celeb}. When I think of you, I'm reminded of the smell of your ${bodyP}. Oh, a sweet fragrance with a tinge of ${food}. You truly are perfect in all your being. So I write this letter asking once and for all, would you be my valentine?`;
+            myText = `Oh, <span class= 'color'>${noun1}</span> this is my love letter to you. Everyday I wake up and am reminded of you. Your eyes, are <span class= 'color'>${adj}</span> and as big as a(n) <span class= 'color'>${noun2}</span>. Your smile is brighter than <span class= 'color'>${celeb}</span>. When I think of you, I'm reminded of the smell of your <span class= 'color'>${bodyP}</span>. Oh, a sweet fragrance with a tinge of <span class= 'color'>${food}</span>. You truly are perfect in all your being. So I write this letter asking once and for all, would you be my valentine?`;
             document.querySelector('#noun1').value = "";
             document.querySelector('#noun2').value = "";
             document.querySelector('#adj').value = "";
