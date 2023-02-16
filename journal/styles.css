@@ -75,6 +75,16 @@ body { animation: changeBg 10s infinite; width:auto;height:auto;
 }
     
 
+img {
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
 
 body {
     background-size: cover;
