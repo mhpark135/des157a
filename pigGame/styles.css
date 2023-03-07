@@ -1,0 +1,158 @@
+body {
+    font-family: Arial;
+    color: #0e0e0e;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #1c1c1c;
+}
+
+h1 {
+    font-family: 'Press Start 2p', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+h2, h3, h4 {
+    font-family: 'Press Start 2p', cursive;
+    color: #ffe019;
+    text-align: center;
+}
+
+p {
+    color: rgb(232, 232, 232);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: left;
+}
+
+.menuP {
+    font-size: 30px;
+}
+
+button, p {
+    font-family: 'VT323';
+}
+
+
+button { 
+    padding: 5px;
+    border-color: #ffe019;
+    background: transparent;
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol, #score {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+}
+
+#game {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    background-color:#353535;
+   
+}
+#actions {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    background-color: rgb(108, 108, 108);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #000000;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#overlay button {
+    /* display: inline-block; */
+    text-align: center;
+    display: inline-block;
+}
+
+#overlay p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#actions {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#actions p {
+    font-family: 'VT323';
+}
+
+#score {
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+#score p {
+    font-size: 20px;
+}
+
+body { animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+}
+
+.plane {
+    display: inline;
+}
+
+
+@keyframes changeBg{
+    0%,100%  {background-image: url(images/bg1.png);}
+    25% {background-image: url(images/bg2.png);}
+    50% {background-image: url(images/bg1.png);}
+    75% {background-image: url(images/bg2.png);}
+    }
