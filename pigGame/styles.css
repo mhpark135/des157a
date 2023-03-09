@@ -35,6 +35,17 @@ button, p {
     font-family: 'VT323';
 }
 
+ .startPlane {
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
+ 
+ .startPlane:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+ }
 
 button { 
     padding: 5px;
@@ -47,8 +58,13 @@ button {
     margin-bottom: 10px;
 }
 
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 div {
-    padding: 20px;
+    margin: 5px;
 }
 
 #gamecontrol, #score {
@@ -59,14 +75,29 @@ div {
     text-align: center;
 }
 
-#game {
+/* #game {
     animation: changeBg 10s infinite; width:auto;height:auto;
         animation-timing-function: linear;
         background-repeat: no-repeat;
         margin: 0;
     background-color:#353535;
-   
+    } */
+
+
+#game p{
+    font-size: 30px;
+    color: white;
 }
+   
+a {
+    margin-top: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'VT323';
+}
+
 #actions {
     animation: changeBg 10s infinite; width:auto;height:auto;
         animation-timing-function: linear;
@@ -123,8 +154,7 @@ div {
 }
 
 #score {
-    height: 80px;
-    padding-top: 20px;
+    height: 40px;
     display: flex;
     justify-content: space-around;
     animation: changeBg 10s infinite; width:auto;height:auto;
@@ -147,8 +177,18 @@ body { animation: changeBg 10s infinite; width:auto;height:auto;
 
 .plane {
     display: inline;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#mainDiv {
+    padding: 0;
+}
 
 @keyframes changeBg{
     0%,100%  {background-image: url(images/bg1.png);}

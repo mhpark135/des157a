@@ -13,6 +13,10 @@
 	const game = document.getElementById('game');
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
+	const beepBtn = document.getElementsByTagName('button');
+	const beepSound = new Audio ('sounds/button.mp3');
+	const winSound = new Audio ('sounds/win.mp3');
+
 
 	const gameData = {
 		dice: ['images/1die.jpg', 'images/2die.jpg', 'images/3die.jpg', 
@@ -100,6 +104,10 @@
 
 	function checkWinningCondition() {
 		if (gameData.score[gameData.index] > gameData.gameEnd) {
+
+			winSound.play();
+
+			// PLAY AUDIO HERE
 			score.innerHTML = `<h3>${gameData.players[gameData.index]} 
 			wins with ${gameData.score[gameData.index]} points!</h3>`;
 
@@ -114,7 +122,7 @@
 	function showCurrentScore() {
 			// player1.innerHTML = `<h4>${gameData.players[0]}</h3> <p>${gameData.score[0]}</p>`;
 			// player2.innerHTML = `<h4>${gameData.players[1]}</h3><p>${gameData.score[1]}</p>`
-		score.innerHTML = `<div id='scoreBoardO'><h3>The score is currently ${gameData.players[0]} ${gameData.score[0]} ${gameData.players[1]} ${gameData.score[1]}</p></div>`;
+		score.innerHTML = `<div id='scoreBoardO'><h3>SCORE<br> ${gameData.players[0]}:${gameData.score[0]} ${gameData.players[1]}:${gameData.score[1]}</p></div>`;
 	}
 
 	(function () {
@@ -126,6 +134,7 @@
 		document.querySelector('.close').addEventListener('click',function(event){
 			event.preventDefault();
 			document.getElementById('overlay').className = 'hidden';
+
 	
 		});
 	
@@ -134,6 +143,13 @@
 				document.getElementById ('overlay').className = 'hidden';
 			}
 		})
+
+
+		document.addEventListener('mousedown',function(){
+			beepSound.play();
+		});
+		
+
 
 	})();
 }());
