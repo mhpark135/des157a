@@ -1,0 +1,369 @@
+body {
+    font-family: Arial;
+    color: #0e0e0e;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #000000;
+    /* background: url(images/bg1.png); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Press Start 2p', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+h2, h3, h4, h5{
+    font-family: 'Press Start 2p', cursive;
+    color: #ffe019;
+    text-align: center;
+}
+
+
+p {
+    color: rgb(232, 232, 232);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: left;
+}
+
+.menuP {
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+button, p {
+    font-family: 'VT323';
+}
+
+.open {
+    display: inline;
+    margin-right: 10px;
+    /* position: fixed;
+	   left: 40%;
+	   top:60%; */
+}
+
+.open2 {
+    display: inline;
+    /* position: fixed;
+	   left: 41%;
+	   top:70%; */
+}
+
+#startmenu {
+    text-align: center;
+}
+
+ .startPlane {
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
+ 
+ .startPlane:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+ }
+
+
+
+button { 
+    padding: 5px;
+    border-color: #ffe019;
+    border-width: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-style: inset;
+}
+
+button:after {
+    content: "<";
+    position: relative;
+    opacity: 0;
+    top: 2px;
+    right: -30px;
+    transition: 0.3s;
+}
+
+button:hover {
+    padding-right:20px;
+    padding-left:8px;
+    transition: 0.1s;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: -10px;
+}
+
+div {
+    margin: 5px;
+}
+
+#score {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+}
+
+#planeOne {
+    position: absolute;
+    top: 270px;
+    left: 200px;
+}
+
+#planeTwo {
+    position: absolute;
+    top: 270px;
+    right: 200px;
+}
+
+
+
+/* #game {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    background-color:#353535;
+    } */
+   
+a {
+    margin-top: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'VT323';
+}
+/* 
+#actions {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    background-color: rgb(0, 0, 0);
+} */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#overlay {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #000000;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#overlay button {
+    /* display: inline-block; */
+    text-align: center;
+    display: inline-block;
+}
+
+.overlayU {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlayU article {
+    border-style:inset;
+    border-color: #ffe019;
+     background-color: #251d04f7;
+     padding: 10px;
+     width: 70vw;
+     height: 70vh;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .imageSelect {
+    filter: invert(40%);
+ }
+ 
+
+#overlay {
+    background-color: #000000;
+    background-image: url(images/backgroundOver.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#overlay p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#actions {
+    animation: changeBg 10s infinite; width:auto;height:auto;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 20vh;
+}
+
+#actions p {
+    font-family: 'VT323';
+}
+
+#score {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: transparent;
+}
+
+#score p {
+    font-size: 20px;
+}
+
+body { animation: changeBg 10s infinite; width:auto;height:auto;
+        animation-timing-function: linear;
+        background-repeat: no-repeat;
+        margin: 0;
+}
+
+.plane {
+    display: inline;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* 
+#mainDiv {
+    padding: 0;
+} */
+
+#overlay2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#gamecontrol p {
+    text-align: left;
+    font-size: 30px;
+}
+
+#overlay2 article {
+   border-width: 20px;
+   border-color: #ffe019;
+   border-style:inset;
+    background-color: #000000c6;
+    padding: 10px;
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#playerOne {
+    color: rgba(104, 183, 255, 1);
+}
+
+#playerTwo {
+    color: rgba(255, 95, 85, 1);
+}
+
+#scoreOne {
+    color: #ffffff;
+}
+
+#scoreTwo {
+    color: #ffffff;
+}
+
+#planeOne {
+    animation: bounce 1s linear infinite;
+}
+
+#planeTwo {
+    animation: bounce 1s linear infinite;
+}
+
+/* .bounce {
+    animation-name: bounceOne;
+    animation-timing-function: linear;
+} */
+
+#gamecontrol p{
+    text-align: center;
+}
+
+ @keyframes bounce {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-10px);}
+}
+
+@keyframes changeBg{
+    0%,100%  {background-image: url(images/bg1.png);}
+    25% {background-image: url(images/bg2.png);}
+    50% {background-image: url(images/bg1.png);}
+    75% {background-image: url(images/bg2.png);}
+    }
